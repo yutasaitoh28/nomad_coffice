@@ -1,0 +1,108 @@
+.wrap {
+    overflow: hidden;
+}
+
+// 背景色
+._bg-green {
+    background-color: $color-bg-green;
+}
+
+._bg-yellow {
+    background-color: $color-bg-yellow;
+}
+
+._bg-ash {
+    background-color: #F5F5F5;
+}
+
+// todo: margin系のユーティリティー定義し直す。（forで回すようにする）
+@for $i from 1 through 20 {
+    ._mb-#{$i} {
+      margin-bottom:#{$i}rem!important;
+  }
+}
+
+@for $i from 1 through 20 {
+    ._pl-#{$i} {
+        padding-left: #{$i}rem !important;
+    }
+}
+
+@for $i from 1 through 20 {
+    ._pr-#{$i} {
+        padding-right: #{$i}rem !important;
+    }
+}
+@for $i from 1 through 20 {
+    ._pt-#{$i} {
+        padding-top: #{$i}rem !important;
+    }
+}
+
+@for $i from 1 through 20 {
+    ._pb-#{$i} {
+        padding-bottom: #{$i}rem !important;
+    }
+}
+
+
+._mh-100 {
+    min-height: 100vh !important;
+}
+
+// ._center-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+//スクロールする箇所を作る
+._can-scroll {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        width: .6rem;
+    }
+
+    &::-webkit-scrollbar-track{
+    background-color: $color_white;
+    border-radius: 1rem;
+    margin: .5rem 0;
+    }
+
+    &::-webkit-scrollbar-thumb{
+    background-color: #ADADAD;
+    border-radius: 1rem;
+    }
+}
+
+.fadein {
+    opacity: 0;
+    animation: fadein 6s ease forwards;
+    }
+    @keyframes fadein {
+    100% {  opacity: 1;}
+    }
+    
+    .txt01 {animation-delay: .5s;}
+    .txt02 {animation-delay: 1s;}
+    .txt03 {animation-delay: 2s;}
+
+.clonenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transition: 0s;
+    transform: translateY(-100%);
+    background: white;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    height: 70px;
+    @include respond(phone){
+        height: 65px;
+    }
+}
+.isshow {
+transform: translateY(0);
+}

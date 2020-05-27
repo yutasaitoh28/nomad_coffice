@@ -1,0 +1,45 @@
+.price-list {
+    > .list {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        > .content {
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 8%;
+            width: 290px;
+            height: 300px;
+            background-color: rgb(235,245,248);
+            > .price {
+                font-size: 24px;
+                font-weight: bold;
+                color: rgb(17,57,98);
+            }
+            > .plan {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            > .button {
+                margin-top: 10px;
+                display       : inline-block;
+                border-radius : 1%;          /* 角丸       */
+                font-size     : 12pt;        /* 文字サイズ */
+                text-align    : center;      /* 文字位置   */
+                cursor        : pointer;     /* カーソル   */
+                padding       : 10px 10px;   /* 余白       */
+                background    : #113962;     /* 背景色     */
+                color         : #ffffff;     /* 文字色     */
+                line-height   : 1em;         /* 1行の高さ  */
+                transition    : .3s;         /* なめらか変化 */
+                box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+                border        : 2px solid #113962;    /* 枠の指定 */
+            }
+            > .button:hover {
+                box-shadow    : none;
+                opacity: .8;          
+            }
+        }
+    }   
+}

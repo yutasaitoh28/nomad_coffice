@@ -1,0 +1,37 @@
+// settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/max-width";
+
+// tools
+@import "tools/mixins";
+
+// generic
+@import "generic/reset";
+@import "generic/root-font-size";
+@import "generic/border-box";
+@import "generic/typography";
+
+// elements
+
+// objects
+
+
+// components
+@import "components/body-setting";
+@import "components/section-title";
+@import "components/header-menu";
+@import "components/first-view";
+@import "components/use-flow";
+@import "components/why-nomad";
+@import "components/price-list";
+@import "components/contact-form";
+@import "components/footer-section";
+
+
+
+// pages
+// @import "pages/home";
+
+// utilities
+@import "utilities/main";

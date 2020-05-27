@@ -1,0 +1,11 @@
+// フォント関連
+$default-font-size: 14px;
+
+$font-family: 'NotoSerifJP-Regular';
+
+@font-face {
+    font-family: 'NotoSerifJP-Regular';
+    src: url('../../font/NotoSerifJP-Regular.otf') format('truetype'),
+    url('../../font/NotoSerifJP-Regular.woff') format('woff'),
+    url('../../font/NotoSerifJP-Regular.ttf') format('truetype');
+}

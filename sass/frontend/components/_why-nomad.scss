@@ -1,0 +1,27 @@
+.why-nomad {
+    padding-top: 100px;
+    > .point {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 100px;
+        > .text {
+            width: 40%;
+            position: relative;
+            > p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                > span {
+                    color: rgb(17,57,98);
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

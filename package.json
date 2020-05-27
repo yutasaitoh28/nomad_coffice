@@ -1,0 +1,19 @@
+{
+  "name": "web-starter",
+  "version": "1.0.0",
+  "description": "starter",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass --include-path scss sass/frontend/app.scss css/frontend/app.css",
+    "build": "node-sass --include-path scss sass/frontend/app.scss css/frontend/app.css --output-style compressed",
+    "watch": "node-sass --include-path scss sass/frontend/app.scss css/frontend/app.css -w"
+  },
+  "author": "Hiroki Fujita",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0"
+  }
+}

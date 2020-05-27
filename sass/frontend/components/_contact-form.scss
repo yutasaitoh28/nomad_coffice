@@ -1,0 +1,62 @@
+.contact-form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-color: rgb(235,245,248);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    > .address {
+        padding-top: 100px;
+        width: 50%;
+        text-align: center;
+        > .section-title {
+            padding-bottom: 20px;
+        }
+    }
+    > .form {
+        width: 50%;
+        > input[type="text"] {
+            width: 40%; /* 幅 */
+            font-size: 0.95em; /* フォントサイズ */
+            margin: .2em 0; /* 前後の余白 */
+            padding: 0.5em; /* テキスト周りの余白 */
+            border: solid 2px #e3e6ea; /* 線の色 */
+            border-radius: 4px; /* 角丸 */
+        }
+        > #subject {
+            width: 80.5%;
+        }
+        > #message {
+            width: 80.5%;
+            height: 300px;
+            text-align: top;
+        }
+        /* フォーカス時のスタイル */
+        > input[type="text"]:focus {
+            border-color: #529fff; /* 線の色 */
+            outline: 0;
+        }
+        > .button {
+            margin-top: 5px;
+            display       : inline-block;
+            border-radius : 1%;          /* 角丸       */
+            font-size     : 18pt;        /* 文字サイズ */
+            text-align    : center;      /* 文字位置   */
+            cursor        : pointer;     /* カーソル   */
+            padding       : 12px 220px;   /* 余白       */
+            background    : #113962;     /* 背景色     */
+            color         : #ffffff;     /* 文字色     */
+            line-height   : 1em;         /* 1行の高さ  */
+            transition    : .3s;         /* なめらか変化 */
+            box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+            border        : 2px solid #113962;    /* 枠の指定 */
+        }
+        > .button:hover {
+            box-shadow    : none;        /* カーソル時の影消去 */
+            opacity: .8;     /* 文字色     */
+        }
+    }
+}
