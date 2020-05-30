@@ -1,6 +1,12 @@
 .first-view {
     position: relative;
+    height: 100vh;
     width: 100%;
+    background-image: url('../../../img/Top_Pic.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
     > .toppic {
         object-fit: cover;
         width: 100%;
@@ -21,7 +27,7 @@
             text-align: center;
             color: rgb(17,57,98);
             font-size: 75px;
-            padding-top: 150px;
+            padding-top: 125px;
         }
         > .description {
             margin: 0 auto;

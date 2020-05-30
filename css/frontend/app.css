@@ -223,7 +223,13 @@ body {
 
 .first-view {
   position: relative;
-  width: 100%; }
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../img/Top_Pic.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top; }
   .first-view > .toppic {
     object-fit: cover;
     width: 100%;
@@ -243,16 +249,37 @@ body {
       text-align: center;
       color: #113962;
       font-size: 75px;
-      padding-top: 150px; }
+      padding-top: 125px; }
     .first-view > .contentwrapper > .description {
       margin: 0 auto;
       width: 60%;
       text-align: center;
       font-size: 18px; }
 
+.our-vision {
+  padding-top: 40px;
+  height: 113vh;
+  width: 100%;
+  background-color: white;
+  text-align: center; }
+  .our-vision > #title {
+    letter-spacing: .1em;
+    font-size: 36px;
+    font-weight: bold; }
+  .our-vision > .text {
+    color: #113962;
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .our-vision > .text span {
+    opacity: 0; }
+  .our-vision > #last {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic; }
+
 .use-flow {
   margin-top: -6px;
-  padding: 150px 0;
+  padding: 100px 0;
   background-color: #ebf5f8; }
   .use-flow > .flow {
     font-size: 24px;
@@ -265,10 +292,12 @@ body {
     .use-flow > .flow > .step1 {
       font-size: 16px; }
       .use-flow > .flow > .step1 > .what1 {
+        font-weight: bold;
         color: #113962; }
     .use-flow > .flow > .step2 {
       font-size: 16px; }
       .use-flow > .flow > .step2 > .what2 {
+        font-weight: bold;
         color: #113962; }
 
 .why-nomad {
@@ -343,6 +372,70 @@ body {
       box-shadow: none;
       opacity: .8; }
 
+.our-introduction {
+  margin-top: 50px;
+  height: 110vh;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #eeffde; }
+  .our-introduction > .section-title {
+    padding-bottom: 40px; }
+  .our-introduction > .wrapper {
+    margin: 0 auto;
+    width: 85%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .our-introduction > .wrapper > .hokuto {
+      width: 45%;
+      height: 100%;
+      position: relative; }
+      .our-introduction > .wrapper > .hokuto > img {
+        width: 230px;
+        height: 200px;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .our-introduction > .wrapper > .hokuto > .p1 {
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        font-weight: bold;
+        font-size: 5px;
+        color: red; }
+        .our-introduction > .wrapper > .hokuto > .p1 > span {
+          display: inline-block;
+          padding: 0.3em 0.5em 0.25em 0.5em;
+          margin-bottom: 0.48em;
+          background-color: white; }
+      .our-introduction > .wrapper > .hokuto > p {
+        font-weight: bold; }
+        .our-introduction > .wrapper > .hokuto > p > span {
+          display: inline-block;
+          padding: 0.3em 0.5em 0.25em 0.5em;
+          margin-bottom: 0.48em;
+          background-color: white; }
+    .our-introduction > .wrapper > .yuta {
+      position: relative;
+      width: 45%;
+      height: 100%; }
+      .our-introduction > .wrapper > .yuta > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 230px;
+        height: 200px;
+        object-fit: contain; }
+      .our-introduction > .wrapper > .yuta > p {
+        font-weight: bold; }
+        .our-introduction > .wrapper > .yuta > p > span {
+          display: inline-block;
+          padding: 0.3em 0.5em 0.25em 0.5em;
+          margin-bottom: 0.48em;
+          background-color: white; }
+
 .contact-form {
   width: 90%;
   margin: 0 auto;
@@ -396,7 +489,7 @@ body {
       /* 文字位置   */
       cursor: pointer;
       /* カーソル   */
-      padding: 12px 220px;
+      padding: 12px 197px;
       /* 余白       */
       background: #113962;
       /* 背景色     */
@@ -443,6 +536,7 @@ body {
     /* 先頭のポッチを消す */
     margin: 2px;
     padding: 6px 0px;
+    padding-right: 10px;
     color: white;
     border-radius: 4px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); }
