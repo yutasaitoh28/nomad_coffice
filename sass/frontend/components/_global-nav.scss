@@ -1,0 +1,23 @@
+.global-nav {
+    z-index: 1500;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 7px;
+    > .globalnav-wrap {
+        font-size: 30px;
+        color:#EEEEEE;
+        height: auto;
+        width: 150px;
+        z-index: 1000;
+        @include respond(phone){
+            right: 5vw;
+        }
+    }
+}
+.global-nav.fixed{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 7px;
+}

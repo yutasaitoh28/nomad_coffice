@@ -183,12 +183,6 @@ body {
 body {
   font-family: 'NotoSerifJP-Regular'; }
 
-.section-title {
-  color: #113962;
-  text-align: center;
-  font-size: 36px;
-  padding-bottom: 50px; }
-
 .header-menu {
   height: 215px;
   width: 100%;
@@ -220,6 +214,74 @@ body {
     color: #fff;
     font-weight: bold;
     padding: 20px; }
+
+.global-nav {
+  z-index: 1500;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 7px; }
+  .global-nav > .globalnav-wrap {
+    font-size: 30px;
+    color: #EEEEEE;
+    height: auto;
+    width: 150px;
+    z-index: 1000; }
+    @media only screen and (max-width: 37.5em) {
+      .global-nav > .globalnav-wrap {
+        right: 5vw; } }
+
+.global-nav.fixed {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 7px; }
+
+.nav-menu {
+  width: 200px; }
+  .nav-menu .dropdown-btn {
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    padding-left: 15px;
+    cursor: pointer;
+    color: #113962;
+    background-color: #dce2e0; }
+  .nav-menu .dropdown {
+    z-index: 1000;
+    background: #dce2e0;
+    position: absolute;
+    left: 0;
+    top: 43px;
+    width: 150px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    display: none; }
+    .nav-menu .dropdown li {
+      line-height: 30px;
+      padding-left: 9px;
+      display: list-item;
+      font-size: 15px;
+      width: 90%; }
+      .nav-menu .dropdown li .title {
+        color: #113962; }
+      .nav-menu .dropdown li:hover {
+        background-color: #113962; }
+        .nav-menu .dropdown li:hover > .title {
+          color: white; }
+  .nav-menu .nav-button-wrap,
+  .nav-menu .open {
+    display: block; }
+  .nav-menu .close {
+    display: block; }
+
+.section-title {
+  color: #113962;
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 50px; }
 
 .first-view {
   position: relative;
@@ -257,8 +319,8 @@ body {
       font-size: 18px; }
 
 .our-vision {
-  padding-top: 40px;
-  height: 113vh;
+  padding: 75px 0;
+  height: 750px;
   width: 100%;
   background-color: white;
   text-align: center; }
@@ -279,13 +341,12 @@ body {
 
 .use-flow {
   margin-top: -6px;
-  padding: 100px 0;
+  padding: 75px 0;
   background-color: #ebf5f8; }
   .use-flow > .flow {
     font-size: 24px;
     width: 50%;
     margin: 0 auto;
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
@@ -301,7 +362,7 @@ body {
         color: #113962; }
 
 .why-nomad {
-  padding-top: 100px; }
+  padding-top: 75px; }
   .why-nomad > .point {
     display: flex;
     flex-direction: row;
@@ -374,9 +435,9 @@ body {
 
 .our-introduction {
   margin-top: 50px;
-  height: 110vh;
+  height: 740px;
   width: 100%;
-  padding: 30px 0;
+  padding: 75px 0;
   background-color: #eeffde; }
   .our-introduction > .section-title {
     padding-bottom: 40px; }
