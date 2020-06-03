@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: left top;
     @include respond(phone){
-        height: 30vh;
+        height: 75vh;
     }
     > .toppic {
         object-fit: cover;
@@ -31,12 +31,18 @@
             color: rgb(17,57,98);
             font-size: 75px;
             padding-top: 125px;
+            @include respond(phone){
+                font-size: 9vw;
+            }
         }
         > .description {
             margin: 0 auto;
             width: 60%;
             text-align: center;
             font-size: 18px;
+            @include respond(phone){
+                font-size: 3vw;
+            }
         }
     }
 }

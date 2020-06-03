@@ -1,14 +1,25 @@
 .why-nomad {
     padding-top: 75px;
+    > .section-title {
+        @include respond(phone){
+            font-size: 7vw;
+        }
+    }
     > .point {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
         margin-bottom: 100px;
+        @include respond(phone){
+            height: 200px;
+        }
         > .text {
             width: 40%;
             position: relative;
+            @include respond(phone){
+                width: 50%;
+            }
             > p {
                 position: absolute;
                 top: 50%;
@@ -25,6 +36,7 @@
         }
         > img {
             @include respond(phone) {
+                object-fit: contain;
                 width: 50%;
             }
         }
