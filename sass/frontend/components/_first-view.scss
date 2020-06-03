@@ -7,6 +7,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
+    @include respond(phone){
+        height: 30vh;
+    }
     > .toppic {
         object-fit: cover;
         width: 100%;

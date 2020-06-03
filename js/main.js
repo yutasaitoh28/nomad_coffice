@@ -23,18 +23,18 @@ $('.our-vision > .text').each(function(){
     });
 });
 
-var _header = $('.global-nav'),
-    thisOffset;
-$(window).on('load',function(){
-	thisOffset = $('.first-view').offset().top + $('.first-view').outerHeight();
-});
-$(window).scroll(function(){
-    _header.hide();
-	if( $(window).scrollTop() + $(window).height() > thisOffset){
-        _header.show();
-		_header.addClass('fixed'); 
-	} else {
-        _header.hide();
-		_header.removeClass('fixed'); 
-	}
-});
+// var _header = $('.global-nav'),
+//     thisOffset;
+// $(window).on('load',function(){
+// 	thisOffset = $('.first-view').offset().top + $('.first-view').outerHeight();
+// });
+// $(window).scroll(function(){
+//     _header.hide();
+// 	if( $(window).scrollTop() + $(window).height() > thisOffset){
+//         _header.show();
+// 		_header.addClass('fixed'); 
+// 	} else {
+//         _header.hide();
+// 		_header.removeClass('fixed'); 
+// 	}
+// });

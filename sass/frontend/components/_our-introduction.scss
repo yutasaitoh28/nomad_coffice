@@ -4,6 +4,9 @@
     width: 100%;
     padding: 75px 0;
     background-color: rgb(238,255,222);
+    @include respond(phone){
+        height: 40vh;
+    }
     > .section-title {
         padding-bottom: 40px;
     }
