@@ -3,9 +3,15 @@
     height: 550px;
     background-color: white;
     position: relative;
+    @include respond(phone){
+        height: 120vh;
+    }
     > .section-title {
         padding-top: 50px;
         padding-bottom: 0;
+        @include respond(phone){
+            font-size: 7vw;
+        }
     }
     > .contact {
         width: 50%;
@@ -31,6 +37,9 @@
         position: absolute;
         left: 35%;
         bottom: 10px;
+        @include respond(phone){
+            left: 12%;
+        }
     }
     > .snsButtons a {
         text-decoration: none;

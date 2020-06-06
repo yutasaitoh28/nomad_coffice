@@ -522,7 +522,7 @@ body {
   background-color: #eeffde; }
   @media only screen and (max-width: 37.5em) {
     .our-introduction {
-      height: 40vh; } }
+      height: 210vh; } }
   .our-introduction > .section-title {
     padding-bottom: 40px; }
   .our-introduction > .wrapper {
@@ -532,10 +532,23 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .our-introduction > .wrapper {
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%; } }
     .our-introduction > .wrapper > .hokuto {
       width: 45%;
       height: 100%;
       position: relative; }
+      @media only screen and (max-width: 37.5em) {
+        .our-introduction > .wrapper > .hokuto {
+          margin: 0 auto;
+          width: 80%;
+          height: auto;
+          margin-bottom: 50px; } }
       .our-introduction > .wrapper > .hokuto > img {
         width: 230px;
         height: 200px;
@@ -543,6 +556,10 @@ body {
         position: absolute;
         top: 0;
         right: 0; }
+        @media only screen and (max-width: 37.5em) {
+          .our-introduction > .wrapper > .hokuto > img {
+            width: 200px;
+            top: -30px; } }
       .our-introduction > .wrapper > .hokuto > .p1 {
         position: absolute;
         right: 0;
@@ -550,6 +567,9 @@ body {
         font-weight: bold;
         font-size: 5px;
         color: red; }
+        @media only screen and (max-width: 37.5em) {
+          .our-introduction > .wrapper > .hokuto > .p1 {
+            top: -30px; } }
         .our-introduction > .wrapper > .hokuto > .p1 > span {
           display: inline-block;
           padding: 0.3em 0.5em 0.25em 0.5em;
@@ -562,10 +582,18 @@ body {
           padding: 0.3em 0.5em 0.25em 0.5em;
           margin-bottom: 0.48em;
           background-color: white; }
+        @media only screen and (max-width: 37.5em) {
+          .our-introduction > .wrapper > .hokuto > p > .brpc {
+            display: none; } }
     .our-introduction > .wrapper > .yuta {
       position: relative;
       width: 45%;
       height: 100%; }
+      @media only screen and (max-width: 37.5em) {
+        .our-introduction > .wrapper > .yuta {
+          margin: 0 auto;
+          width: 90%;
+          height: auto; } }
       .our-introduction > .wrapper > .yuta > img {
         position: absolute;
         top: 0;
@@ -573,6 +601,9 @@ body {
         width: 230px;
         height: 200px;
         object-fit: contain; }
+        @media only screen and (max-width: 37.5em) {
+          .our-introduction > .wrapper > .yuta > img {
+            top: -15px; } }
       .our-introduction > .wrapper > .yuta > p {
         font-weight: bold; }
         .our-introduction > .wrapper > .yuta > p > span {
@@ -580,6 +611,9 @@ body {
           padding: 0.3em 0.5em 0.25em 0.5em;
           margin-bottom: 0.48em;
           background-color: white; }
+        @media only screen and (max-width: 37.5em) {
+          .our-introduction > .wrapper > .yuta > p > .brpc {
+            display: none; } }
 
 .contact-form {
   width: 90%;
@@ -591,15 +625,29 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .contact-form {
+      display: flex;
+      flex-direction: column; } }
   .contact-form > .address {
     padding-top: 100px;
     width: 50%;
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form > .address {
+        padding-top: 0;
+        width: 80%;
+        margin: 0 auto; } }
     .contact-form > .address > .section-title {
       padding-bottom: 20px; }
   .contact-form > .form {
     width: 50%;
     /* フォーカス時のスタイル */ }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form > .form {
+        padding-top: 50px;
+        width: 80%;
+        margin: 0 auto; } }
     .contact-form > .form > input[type="text"] {
       width: 40%;
       /* 幅 */
@@ -613,12 +661,21 @@ body {
       /* 線の色 */
       border-radius: 4px;
       /* 角丸 */ }
+      @media only screen and (max-width: 37.5em) {
+        .contact-form > .form > input[type="text"] {
+          width: 100%; } }
     .contact-form > .form > #subject {
       width: 80.5%; }
+      @media only screen and (max-width: 37.5em) {
+        .contact-form > .form > #subject {
+          width: 100%; } }
     .contact-form > .form > #message {
       width: 80.5%;
       height: 300px;
       text-align: top; }
+      @media only screen and (max-width: 37.5em) {
+        .contact-form > .form > #message {
+          width: 100%; } }
     .contact-form > .form > input[type="text"]:focus {
       border-color: #529fff;
       /* 線の色 */
@@ -650,7 +707,7 @@ body {
       /* 枠の指定 */ }
       @media only screen and (max-width: 37.5em) {
         .contact-form > .form > .button {
-          padding: 12px 13vw; } }
+          width: 100%; } }
     .contact-form > .form > .button:hover {
       box-shadow: none;
       /* カーソル時の影消去 */
@@ -668,9 +725,15 @@ body {
   /* アイコン部分 */
   /* テキスト部分 */
   /* 各 SNS のブランドカラー */ }
+  @media only screen and (max-width: 37.5em) {
+    .footer-section {
+      height: 120vh; } }
   .footer-section > .section-title {
     padding-top: 50px;
     padding-bottom: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .footer-section > .section-title {
+        font-size: 7vw; } }
   .footer-section > .contact {
     width: 50%;
     margin: 0 auto;
@@ -692,6 +755,9 @@ body {
     position: absolute;
     left: 35%;
     bottom: 10px; }
+    @media only screen and (max-width: 37.5em) {
+      .footer-section > .snsButtons {
+        left: 12%; } }
   .footer-section > .snsButtons a {
     text-decoration: none; }
   .footer-section > .snsButtons li {
